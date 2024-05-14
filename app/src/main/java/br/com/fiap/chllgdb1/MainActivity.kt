@@ -12,11 +12,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import br.com.fiap.chllgdb1.screens.cadastroScreen
-import br.com.fiap.chllgdb1.screens.cadastroScreenViewModel
+import androidx.navigation.compose.composable
+import br.com.fiap.chllgdb1.screens.CadastroScreen
+import br.com.fiap.chllgdb1.screens.CadastroScreenViewModel
 import br.com.fiap.chllgdb1.screens.homeScreen
 import br.com.fiap.chllgdb1.screens.loginScreen
 import br.com.fiap.chllgdb1.screens.loginScreenViewModel
+import br.com.fiap.chllgdb1.screens.profileScreen
 import br.com.fiap.chllgdb1.ui.theme.ChllgDB1Theme
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
@@ -60,7 +62,10 @@ class MainActivity : ComponentActivity() {
                             loginScreen(loginScreenViewModel(), navController)
                         }
                         composable(route = "Cadastro"){
-                            cadastroScreen(cadastroScreenViewModel(),navController)
+                            CadastroScreen(CadastroScreenViewModel(),navController)
+                        }
+                        composable(route = "Profile"){
+                            profileScreen(CadastroScreenViewModel(), navController)
                         }
 
                     }

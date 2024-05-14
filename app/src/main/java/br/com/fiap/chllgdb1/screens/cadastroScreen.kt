@@ -42,8 +42,8 @@ import br.com.fiap.chllgdb1.components.CaixaDeEntrada
 import br.com.fiap.chllgdb1.components.EntradaSenha
 
 @Composable
-fun cadastroScreen(
-    cadastroScreenViewModel: cadastroScreenViewModel,
+fun CadastroScreen(
+    cadastroScreenViewModel: CadastroScreenViewModel,
     navController: NavController
 ) {
 
@@ -266,7 +266,7 @@ fun cadastroScreen(
                     modifier = Modifier
                         .size(width = 300.dp, height = 48.dp),
                     onClick = {
-                        navController.navigate("Login")
+                        navController.navigate("Profile")
                     },
                     enabled = camposPreenchidos,
                     colors = ButtonDefaults.buttonColors(

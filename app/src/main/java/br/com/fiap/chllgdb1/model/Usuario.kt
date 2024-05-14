@@ -13,4 +13,5 @@ class Usuario {
     var telefone: String = ""
     var email: String = ""
     var senha: String = ""
+
 }
