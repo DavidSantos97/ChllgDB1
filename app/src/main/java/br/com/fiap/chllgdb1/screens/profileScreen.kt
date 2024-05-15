@@ -38,7 +38,7 @@ import br.com.fiap.chllgdb1.components.CaixaDeEntrada
 
 @Composable
 fun profileScreen(
-    profileScreenViewModel: CadastroScreenViewModel,
+    profileScreenViewModel: cadastroScreenViewModel,
     navController: NavController
 ) {
     val expState = profileScreenViewModel.expState.observeAsState(initial = "")

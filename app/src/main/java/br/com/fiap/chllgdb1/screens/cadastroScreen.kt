@@ -43,7 +43,7 @@ import br.com.fiap.chllgdb1.components.EntradaSenha
 
 @Composable
 fun CadastroScreen(
-    cadastroScreenViewModel: CadastroScreenViewModel,
+    cadastroScreenViewModel: cadastroScreenViewModel,
     navController: NavController
 ) {
 

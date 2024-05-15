@@ -4,7 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class CadastroScreenViewModel:ViewModel(){
+class cadastroScreenViewModel:ViewModel(){
+
     private val _nomeState = MutableLiveData<String>()
     val nomeState: LiveData<String> = _nomeState
 
